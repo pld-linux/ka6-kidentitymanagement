@@ -28,6 +28,7 @@ BuildRequires:	kf6-kconfig-devel >= %{kframever}
 BuildRequires:	kf6-kcoreaddons-devel >= %{kframever}
 BuildRequires:	kf6-kiconthemes-devel >= %{kframever}
 BuildRequires:	kf6-kio-devel >= %{kframever}
+BuildRequires:	kf6-kirigami-addons-devel >= %{kframever}
 BuildRequires:	kf6-ktextwidgets-devel >= %{kframever}
 BuildRequires:	kf6-kxmlgui-devel >= %{kframever}
 BuildRequires:	ninja
