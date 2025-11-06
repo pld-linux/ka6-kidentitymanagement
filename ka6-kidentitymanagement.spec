@@ -1,18 +1,18 @@
 #
 # Conditional build:
 %bcond_with	tests		# build with tests
-%define		kdeappsver	25.08.2
+%define		kdeappsver	25.08.3
 %define		kframever	5.94.0
 %define		qtver		5.15.2
 %define		kaname		kidentitymanagement
 Summary:	kidentitymanagement
 Name:		ka6-%{kaname}
-Version:	25.08.2
-Release:	2
+Version:	25.08.3
+Release:	1
 License:	GPL v2+/LGPL v2.1+
 Group:		X11/Libraries
 Source0:	https://download.kde.org/stable/release-service/%{kdeappsver}/src/%{kaname}-%{version}.tar.xz
-# Source0-md5:	2bf48a3a0b350201f5de256811f11579
+# Source0-md5:	0c0d31688788b9cf5fdef254b495331d
 URL:		http://www.kde.org/
 BuildRequires:	Qt6Core-devel >= %{qtver}
 BuildRequires:	Qt6Gui-devel >= 5.11.1
@@ -87,11 +87,11 @@ rm -rf $RPM_BUILD_ROOT
 
 %files -f %{kaname}.lang
 %defattr(644,root,root,755)
-%attr(755,root,root) %{_libdir}/libKPim6IdentityManagementCore.so.*.*
+%{_libdir}/libKPim6IdentityManagementCore.so.*.*
 %ghost %{_libdir}/libKPim6IdentityManagementCore.so.6
-%attr(755,root,root) %{_libdir}/libKPim6IdentityManagementQuick.so.*.*
+%{_libdir}/libKPim6IdentityManagementQuick.so.*.*
 %ghost %{_libdir}/libKPim6IdentityManagementQuick.so.6
-%attr(755,root,root) %{_libdir}/libKPim6IdentityManagementWidgets.so.*.*
+%{_libdir}/libKPim6IdentityManagementWidgets.so.*.*
 %ghost %{_libdir}/libKPim6IdentityManagementWidgets.so.6
 %dir %{_libdir}/qt6/qml/org/kde/kidentitymanagement
 %{_libdir}/qt6/qml/org/kde/kidentitymanagement/BasicIdentityEditorCard.qml
@@ -100,7 +100,7 @@ rm -rf $RPM_BUILD_ROOT
 %{_libdir}/qt6/qml/org/kde/kidentitymanagement/IdentityEditorPage.qml
 %{_libdir}/qt6/qml/org/kde/kidentitymanagement/kde-qmlmodule.version
 %{_libdir}/qt6/qml/org/kde/kidentitymanagement/kidentitymanagement_quick_plugin.qmltypes
-%attr(755,root,root) %{_libdir}/qt6/qml/org/kde/kidentitymanagement/libkidentitymanagement_quick_plugin.so
+%{_libdir}/qt6/qml/org/kde/kidentitymanagement/libkidentitymanagement_quick_plugin.so
 %{_libdir}/qt6/qml/org/kde/kidentitymanagement/qmldir
 %{_datadir}/dbus-1/interfaces/kf6_org.kde.pim.IdentityManager.xml
 %{_datadir}/qlogging-categories6/kidentitymanagement.categories
