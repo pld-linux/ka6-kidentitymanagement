@@ -42,7 +42,10 @@ Obsoletes:	ka5-%{kaname} < %{version}
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-KIdentity Management.
+Library to assist in handling user identities.
+
+%description -l pl.UTF-8
+Biblioteka pomocna przy obsłudze tożsamości użytkowników.
 
 %package devel
 Summary:	Header files for %{kaname} development
